@@ -9,7 +9,7 @@
     "typescript": "^5.4.5"
   },
   "scripts": {
-    "build": "tsc -p .",
+    "build": "tsc",
     "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
     "prestart": "yarn install",
     "start": "node dist/index.js"
