@@ -51,8 +51,8 @@ export class Game {
 
     }
     if (this.board.isGameOver()) {
-      this.player1.emit(GAME_OVER, JSON.stringify({ type: GAME_OVER, winner: this.board.turn() === "w" ? "Black" : "White" }))
-      this.player2.emit(GAME_OVER, JSON.stringify({ type: GAME_OVER, winner: this.board.turn() === "w" ? "Black" : "White" }))
+      this.player1.emit(GAME_OVER, JSON.stringify({ type: GAME_OVER, winner: this.board.turn() === "w" ? "black" : "white" }))
+      this.player2.emit(GAME_OVER, JSON.stringify({ type: GAME_OVER, winner: this.board.turn() === "w" ? "black" : "white" }))
     }
   }
 }

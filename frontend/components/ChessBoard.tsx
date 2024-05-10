@@ -55,6 +55,7 @@ export function ChessBoardWrapper() {
     })
     socket?.on(GAME_OVER, (data) => {
       setOver("Yes")
+      console.log(data)
       if (JSON.parse(data).winner === color) {
         setWin(true)
         return
