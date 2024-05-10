@@ -94,8 +94,8 @@ export function ChessBoardWrapper() {
     if (win) {
       return (
         <div className="h-screen gap-5 bg-[#302E2B] flex flex-col justify-center items-center">
-          <Image src={"/win.png"} alt="win" width={100} height={100} />
-          <p> You Win {player1?.name}</p>
+          <Image src={"/crown.png"} alt="win" width={100} height={100} />
+          <p className="text-3xl font-semibold text-white"> You Win {player1?.name}</p>
         </div>
       )
     }
